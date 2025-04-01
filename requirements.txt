@@ -1,0 +1,22 @@
+einops
+omegaconf
+efficientnet_pytorch
+openai-clip
+matplotlib
+torch-fidelity
+scikit-image
+lpips
+pytorch-msssim
+torchmetrics
+clean-fid
+torch==2.1.0
+pytorch_lightning==2.4.0
+transformers==4.44.2
+diffusers==0.26.3
+huggingface-hub==0.25.1
+timm==0.9.16
+xformers==0.0.22.post7
+pip install omegaconf
+numpy==1.23.2
+
+

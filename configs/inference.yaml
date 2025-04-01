@@ -1,0 +1,33 @@
+dataset: 'kodak'
+model:
+  model_root: '/home/zhangmaojun/Desktop/SGDJSCC/results/model'
+  condition_setting:
+    use_semantic: true
+    use_text: true
+    use_controlnet: true
+    use_jscc_feature: true
+    use_gt_text: false
+
+
+  diffusion:
+    step_style: 'continuous'
+    diffusion_step: 50
+    guidance_scale: 4.0
+    controlnet_scale: 0.3
+    cfg_method: 'pcs_1.0'
+    server_name: '201'
+
+transmission:
+  canny_cr: 0.2
+  channel: 'AWGN'
+  mask_method: 'none'
+  use_gt_csi: false
+
+dataset_config:
+  dataset_root: '/home/zhangmaojun/ic_data/coco/'
+  fid_root: '/home/zhangmaojun/ic_data/coco/fid_temp'
+  use_sam_canny: false
+  batch_size: 1
+  num_workers: 0
+  test_num: 500
+
